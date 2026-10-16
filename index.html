@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Digital Clock & Counter</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+  <div class="wrap">
+
+    <header class="card">
+      <div class="brand">
+        <i class="fa-solid fa-clock brand-icon" aria-hidden="true"></i>
+        <div>
+          <h1>Digital Clock</h1><span>& Counter</span>
+        </div>
+      </div>
+      <div class="hr">
+        <div class="live"><span class="dot"></span>Live</div>
+        <div class="sep"></div>
+        <i class="fa-solid fa-sun theme-icon" aria-hidden="true"></i>
+        <button class="sw" role="switch" aria-checked="false" aria-label="Toggle dark mode"></button>
+        <i class="fa-solid fa-moon theme-icon" aria-hidden="true"></i>
+      </div>
+    </header>
+
+    <section class="card hero">
+      <div class="date">
+        <i class="fa-solid fa-calendar-days date-icon" aria-hidden="true"></i>
+        <div><b>Wednesday, October 14, 2026</b><small>Sample date <span class="chip">AM</span></small></div>
+      </div>
+      <div class="greet">
+        <h2>👋 Good Morning!</h2>
+        <p>Make every second count.</p>
+      </div>
+      <i class="fa-solid fa-seedling leaf" aria-hidden="true"></i>
+    </section>
+
+    <div class="grid">
+      <section class="panel">
+        <div class="ph">
+          <div class="ico"><i class="fa-solid fa-clock panel-icon" aria-hidden="true"></i></div>
+          <div>
+            <h3>Digital Clock</h3>
+            <p>Real time, always.</p>
+          </div>
+          <span class="tag"><i></i>Live</span>
+        </div>
+        <div class="time">
+          <span>00</span><em>:</em><span>00</span><em>:</em><span>00</span>
+        </div>
+        <div class="cap">Sample time</div>
+        <div class="foot"><span><span class="ico foot-date-icon"><i class="fa-solid fa-calendar-days foot-calendar-icon" aria-hidden="true"></i></span><span>Wednesday, October 14, 2026</span></span><span class="chip">AM</span></div>
+      </section>
+
+      <section class="panel">
+        <div class="ph">
+          <div class="ico"><i class="fa-solid fa-plus panel-icon" aria-hidden="true"></i></div>
+          <div>
+            <h3>Counter</h3>
+            <p>Simple • Fast • Useful</p>
+          </div><span class="tag">Total: 0</span>
+        </div>
+        <div class="count"><b>0</b>
+          <div class="cap" style="margin-top:12px">Current count</div>
+        </div>
+
+        <button class="btn p">
+          <i class="fa-solid fa-plus button-icon" aria-hidden="true"></i>Increase
+        </button>
+        <button class="btn">
+          <i class="fa-solid fa-minus button-icon" aria-hidden="true"></i>Decrease
+        </button>
+        <button class="btn o">
+          <i class="fa-solid fa-rotate-left button-icon" aria-hidden="true"></i>Reset
+        </button>
+      </section>
+    </div>
+
+    <nav class="card">
+      <div class="tool"><span class="ico"><i class="fa-solid fa-stopwatch tool-icon" aria-hidden="true"></i></span><span><b>Stopwatch</b><small>Track your time</small></span><i class="fa-solid fa-chevron-right chevron-icon" aria-hidden="true"></i></div>
+      <div class="tool"><span class="ico"><i class="fa-solid fa-hourglass-half tool-icon" aria-hidden="true"></i></span><span><b>Timer</b><small>Set a countdown</small></span><i class="fa-solid fa-chevron-right chevron-icon" aria-hidden="true"></i></div>
+      <div class="tool"><span class="ico"><i class="fa-solid fa-globe tool-icon" aria-hidden="true"></i></span><span><b>World Clock</b><small>Timezones</small></span><i class="fa-solid fa-chevron-right chevron-icon" aria-hidden="true"></i></div>
+      <button class="dm" aria-pressed="false"><i class="fa-solid fa-moon theme-icon" aria-hidden="true"></i>Dark Mode</button>
+    </nav>
+
+  </div>
+</body>
+
+</html>
