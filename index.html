@@ -31,7 +31,7 @@
     <section class="card hero">
       <div class="date">
         <i class="fa-solid fa-calendar-days date-icon" aria-hidden="true"></i>
-        <div><b>Wednesday, October 14, 2026</b><small>Sample date <span class="chip">AM</span></small></div>
+        <div><b class="current-date">Wednesday, October 14, 2026</b><small>Today <span class="chip time-period">AM</span></small></div>
       </div>
       <div class="greet">
         <h2>👋 Good Morning!</h2>
@@ -50,11 +50,12 @@
           </div>
           <span class="tag"><i></i>Live</span>
         </div>
-        <div class="time">
+        <div class="time" id="time">
           <span>00</span><em>:</em><span>00</span><em>:</em><span>00</span>
         </div>
-        <div class="cap">Sample time</div>
-        <div class="foot"><span><span class="ico foot-date-icon"><i class="fa-solid fa-calendar-days foot-calendar-icon" aria-hidden="true"></i></span><span>Wednesday, October 14, 2026</span></span><span class="chip">AM</span></div>
+        <div class="cap">Current time</div>
+        <button class="btn clock-toggle" id="toggleFormat" aria-pressed="false">Switch to 12-hour</button>
+        <div class="foot"><span><span class="ico foot-date-icon"><i class="fa-solid fa-calendar-days foot-calendar-icon" aria-hidden="true"></i></span><span class="current-date">Wednesday, October 14, 2026</span></span><span class="chip time-period">AM</span></div>
       </section>
 
       <section class="panel">
@@ -89,6 +90,7 @@
     </nav>
 
   </div>
+  <script src="js/clock.js"></script>
 </body>
 
 </html>

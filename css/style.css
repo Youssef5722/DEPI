@@ -40,6 +40,21 @@ body {
   display: grid; 
   place-items: center;
 }
+
+.brand-icon { font-size: 68px; }
+.theme-icon { font-size: 24px; }
+.date-icon { font-size: 46px; color: #0d6f73; }
+.leaf {
+  font-size: 112px;
+  color: #4fb8a6;
+  opacity: .75;
+}
+.panel-icon { font-size: 34px; }
+.foot-date-icon { width: 44px; height: 44px; flex: 0 0 44px; }
+.foot-calendar-icon { font-size: 20px; }
+.button-icon { font-size: 18px; }
+.tool-icon { font-size: 26px; }
+.chevron-icon { font-size: 18px; margin-left: auto; }
 .cap { 
     text-align: center; 
     color:#5b7a8c; 
@@ -224,6 +239,11 @@ header {
     background: transparent; 
     border-color: #d5ece8; 
 }
+.clock-toggle {
+  width: auto;
+  margin: 12px auto 0;
+  padding: 0 22px;
+}
 
 
 nav { 
@@ -281,4 +301,28 @@ nav {
   .date { 
     border: 0; 
     padding: 0; }
+}
+
+@media (max-width: 520px) {
+  body { padding: 14px; }
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 20px;
+  }
+  .brand-icon { font-size: 56px; }
+  .hr { gap: 10px; }
+  .hero { padding: 24px 20px; }
+  .date { gap: 12px; }
+  .date b { font-size: 1rem; }
+  .date small { font-size: .95rem; }
+  .greet h2 { font-size: 1.8rem; }
+  .leaf { font-size: 84px; opacity: .45; }
+  .panel { padding: 22px 18px; }
+  .foot { gap: 10px; }
+  .foot > span:first-child { min-width: 0; }
+  .foot > span:first-child > span:last-child { font-size: .8rem; }
+  nav { padding: 14px; }
+  .tool { padding: 12px; }
 }
