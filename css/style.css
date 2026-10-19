@@ -51,7 +51,7 @@ body {
 }
 .panel-icon { font-size: 34px; }
 .foot-date-icon { width: 44px; height: 44px; flex: 0 0 44px; }
-.foot-calendar-icon { font-size: 20px; }
+.foot-calendar-icon { font-size: 20px; margin-left: 12.9px; }
 .button-icon { font-size: 18px; }
 .tool-icon { font-size: 26px; }
 .chevron-icon { font-size: 18px; margin-left: auto; }
