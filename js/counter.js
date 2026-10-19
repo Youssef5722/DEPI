@@ -2,9 +2,9 @@
 var count = 0;
 
 const countDisplay = document.getElementById("count");
-const increaseBtn = document.getElementById("btn p");
-const decreaseBtn = document.getElementById("btn");
-const resetBtn = document.getElementById("btn o");
+const increaseBtn = document.getElementById(" increase");
+const decreaseBtn = document.getElementById("decrease");
+const resetBtn = document.getElementById("reset");
 
 function updateDisplay() {
     countDisplay.textContent = count;
